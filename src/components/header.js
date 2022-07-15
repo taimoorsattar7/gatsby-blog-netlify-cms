@@ -1,12 +1,8 @@
 import React from "react"
 
-import { isLoggedIn, logout } from "@utils/auth"
 import { Link, navigate } from "gatsby"
 
 export default function Header({ location }) {
-  function handleLogout() {
-    logout(navigate("/login"))
-  }
   return (
     <header className="container max-w-2xl px-3 pt-10 mx-auto">
       <nav
@@ -60,42 +56,6 @@ export default function Header({ location }) {
           >
             Contact
           </Link>
-
-          {isLoggedIn() === true ? (
-            <div className="inline-flex md:space-x-8">
-              <Link
-                className={
-                  location.pathname === "/modules"
-                    ? "font-medium text-blue-500"
-                    : "hover:text-blue-800"
-                }
-                to="/modules"
-              >
-                Dashboard
-              </Link>
-
-              <Link
-                onClick={() => {
-                  handleLogout()
-                }}
-                className="font-medium"
-                to="#"
-              >
-                Logout
-              </Link>
-            </div>
-          ) : (
-            <Link
-              className={
-                location.pathname === "/login"
-                  ? "font-medium text-blue-500"
-                  : "hover:text-blue-800"
-              }
-              to="/login"
-            >
-              Login
-            </Link>
-          )}
         </div>
       </nav>
 
