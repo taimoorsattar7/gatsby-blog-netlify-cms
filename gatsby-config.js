@@ -4,6 +4,10 @@ require("dotenv").config({
 })
 
 module.exports = {
+  siteMetadata: {
+    // If you didn't use the resolveSiteUrl option this needs to be set
+    siteUrl: `https://gatsby-blog-netlifycms.netlify.app`,
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
