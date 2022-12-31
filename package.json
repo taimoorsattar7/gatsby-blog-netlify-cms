@@ -3,6 +3,7 @@
   "private": true,
   "description": "A starter template for a blog powered by Gatsby and Netlify CMS",
   "version": "0.1.0",
+  "main": "./src/pages/index.js",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
@@ -10,10 +11,10 @@
     "gatsby": "^4.5.2",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-image": "^2.5.1",
-    "gatsby-plugin-manifest": "^4.5.1",
+    "gatsby-plugin-manifest": "^4.25.0",
     "gatsby-plugin-netlify-cms": "^6.5.0",
     "gatsby-plugin-react-helmet": "^5.5.0",
-    "gatsby-plugin-sharp": "^4.5.1",
+    "gatsby-plugin-sharp": "^4.25.0",
     "gatsby-plugin-sitemap": "^5.5.0",
     "gatsby-remark-copy-linked-files": "^5.5.0",
     "gatsby-remark-images": "^6.5.1",
@@ -22,7 +23,7 @@
     "gatsby-remark-smartypants": "^5.5.0",
     "gatsby-source-filesystem": "^4.5.1",
     "gatsby-transformer-remark": "^5.5.1",
-    "gatsby-transformer-sharp": "^4.5.0",
+    "gatsby-transformer-sharp": "^4.25.0",
     "netlify-cms-app": "^2.15.63",
     "prismjs": "^1.26.0",
     "react": "^17.0.2",
@@ -43,20 +44,18 @@
     "gatsby"
   ],
   "license": "0BSD",
-  "main": "n/a",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "lint": "eslint src/**/*.{js,jsx}",
-    "lint:fix": "eslint src/**/*.{js,jsx} --fix",
     "build": "gatsby build",
-    "dev": "gatsby develop",
-    "start": "npm run develop",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "lint": "eslint src/**/*.{js,jsx}",
+    "lint:fix": "eslint src/**/*.{js,jsx} --fix"
   }
 }
