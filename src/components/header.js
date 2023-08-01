@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Link, navigate } from "gatsby"
+import { Link } from "gatsby"
 
 export default function Header({ location }) {
   return (
